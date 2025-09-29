@@ -1,0 +1,127 @@
+# Docker for Windows ARM64 - Git Ignore File
+
+# Build artifacts
+build/
+releases/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go build artifacts
+*.test
+*.prof
+*.out
+coverage.txt
+
+# Vendor directories (keep scripts, ignore binaries)
+vendor/bin/
+vendor/pkg/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.#*
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Go specific
+*.so
+*.dylib
+*.test
+*.prof
+*.out
+.glide/
+
+# Source repositories (cloned during build)
+docker-cli/
+docker-engine/
+moby/
+
+# Installer binaries in installer directory
+installer/docker-windows-arm64.exe
+installer/dockerd-windows-arm64.exe
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+*.iml
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node.js (if any tooling uses it)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if any tooling uses it)
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Docker files
+*.tar
+*.tgz
+
+# Archive files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# Except for release archives in releases/
+!releases/*.zip
+!releases/*.tar.gz
+
+# Go module cache
+go.sum
+
+# NSIS temporary files
+*.nsi.tmp
+
+# Windows installer files
+*.msi
+*.msm
+*.msp
+
+# Certificate files
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+*.cer
+
+# Keep LICENSE and README files
+!LICENSE*
+!README*
+!CHANGELOG*
+!CONTRIBUTING*
+!**/LICENSE*
+!**/README*
